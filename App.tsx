@@ -3,6 +3,7 @@ import { Wand2, Loader2, Trash2 } from 'lucide-react';
 import Header from './components/Header';
 import ResultTabs from './components/ResultTabs';
 import AdUnit from './components/AdUnit';
+import LatestPosts from './components/LatestPosts';
 import { analyzeContent } from './services/geminiService';
 import { DICTIONARY } from './constants';
 import { Language, SEOData } from './types';
@@ -205,6 +206,9 @@ const App: React.FC = () => {
                   />
               </div>
           )}
+
+          {/* Blogger Widget / Latest Posts */}
+          <LatestPosts />
         </main>
 
         {/* Right Sidebar Ad - Desktop Only */}
